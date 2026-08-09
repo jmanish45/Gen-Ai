@@ -10,7 +10,7 @@ import os
 load_dotenv()
 
 
-data = PyPDFLoader("./deepLearning.pdf")
+data = PyPDFLoader("./intro-to-ml.pdf")
 docs = data.load()
 
 

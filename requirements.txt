@@ -12,6 +12,7 @@ tiktoken
 fastapi
 uvicorn
 requests
+streamlit
 langchain
 langchain-core
 langchain-community
@@ -26,3 +27,11 @@ tiktoken
 fastapi
 uvicorn
 requests
+
+
+chromadb
+sentence-transformers
+pypdf
+unstructured
+streamlit
+tqdm

@@ -1,20 +1,43 @@
 # Environments
 .env
+.env.*
 .venv
-env/
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
+
+# UV cache
+.uv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Python environments
-.uv
-uv.lock
+# Python caches, test output, and coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Packaging / build output
+build/
+dist/
+site/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# Generated scratch files
+DAY-3/Document_Loaders/tempCodeRunnerFile.py
 
 # IDEs and Editors
 .vscode/
@@ -22,8 +45,10 @@ uv.lock
 .spyderproject
 .spyproject
 
-# VS Code
-.vscode/
+# Logs
+*.log
+*.pid
+*.seed
 
 # OS generated files
 .DS_Store

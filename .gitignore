@@ -38,6 +38,10 @@ pip-wheel-metadata/
 
 # Generated scratch files
 DAY-3/Document_Loaders/tempCodeRunnerFile.py
+notes.txt
+*.pdf
+chroma_db/
+chroma-db/
 
 # IDEs and Editors
 .vscode/

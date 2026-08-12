@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aperture — Document Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <main class="shell">
+    <nav><a class="brand" href="/"><span class="brand-mark">A</span> APERTURE</a><div class="nav-actions"><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode"><span class="sun">☼</span><span class="moon">☾</span></button><span class="nav-pill"><i></i> PRIVATE SESSION</span></div></nav>
+    <section class="hero"><p class="eyebrow">DOCUMENT INTELLIGENCE</p><h1>Ask more of<br><em>your documents.</em></h1><p class="lede">Upload a PDF, then have a focused conversation with the information inside it.</p></section>
+    <section class="workspace">
+      <aside class="upload-panel glass">
+        <div class="panel-top"><span class="step">01</span><span>YOUR SOURCE</span></div>
+        <div id="drop-zone" class="drop-zone" role="button" tabindex="0"><input id="pdf-input" type="file" accept="application/pdf" hidden />
+          <div class="upload-icon">↑</div><h2>Drop your PDF here</h2><p>or <button id="browse" type="button">browse files</button> · up to 25 MB</p>
+        </div>
+        <div id="file-card" class="file-card hidden"><div class="pdf-badge">PDF</div><div class="file-details"><strong id="file-name"></strong><small id="file-meta">Preparing your document…</small><div id="progress-wrap" class="progress-wrap"><div class="progress-track"><span id="progress-bar"></span></div><span id="progress-value">0%</span></div></div><button id="remove-file" aria-label="Remove document">×</button></div>
+        <p class="secure-note">Your document powers only this conversation.</p>
+      </aside>
+      <section class="chat-panel glass">
+        <div class="panel-top"><span class="step">02</span><span>CONVERSATION</span><span id="ready-dot" class="status">AWAITING DOCUMENT</span></div>
+        <div id="messages" class="messages"><div class="empty-state"><div class="spark">✦</div><h2>Ready when you are.</h2><p>Upload a document to start asking precise questions.</p></div></div>
+        <form id="chat-form" class="composer"><input id="question" autocomplete="off" placeholder="Ask a question about your document…" disabled /><button id="send" type="submit" disabled aria-label="Send question">↗</button></form>
+      </section>
+    </section>
+    <footer><span>APERTURE / RAG SYSTEM</span><span>BUILT FOR CLARITY</span></footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
